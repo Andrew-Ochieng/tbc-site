@@ -5,197 +5,259 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trinity Baptist Church</title>
-    <link rel="stylesheet" href="../../public/styles.css">
+    <link rel="stylesheet" href="../dist/output.css">
+
 </head>
-<body><!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trinity Baptist Church - Funyula</title>
-        <link rel="stylesheet" href="../../public/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body class="bg-gray-50">
-        <header>
-            <div class="bg-gray-500 text-white row-auto px-4 py-2 md:flex md:justify-evenly">
-                <div class="ml-4px">
-                    <p class="hover:text-blue-200 duration-500"><i class="text-base pr-2 fa fa-envelope-o" aria-hidden="true"></i> info@tbcfunyula.com</p>
+<body class="bg-gray-50">
+        
+    <header>
+        <!--navbar-->
+        <nav class="p-6 sticky top-0 bg-cover bg-gradient-to-r from-blue-300 to-blue-400">
+            <div class="flex items-center justify-between flex-wrap">
+                <div class="flex items-center flex-shrink-0 text-white mr-6">
+                    <a href="#">
+                        <img class="h-8" src="../images/tbc-nairobi-logo.svg" alt="">
+                    </a>
                 </div>
-                <div class="mr-4px">
-                    <p class="hover:text-blue-200 duration-500"><i class="text-base pr-2 fa fa-phone" aria-hidden="true"></i> 0720406267</p>
+                <div class="block lg:hidden">
+                    <button class="menu-btn flex items-center px-3 py-2 border-2 rounded text-gray-600 border-gray-600 hover:text-white hover:border-white">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 18 18 " xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                        </svg>
+                    </button>
                 </div>
-                <div class="mr-4px">
-                    <p class="hover:text-blue-200 duration-500"><i class="text-base pr-2 fa fa-map-marker" aria-hidden="true"></i> 200m off Bumala - Port Victoria Road</p>
+                <div class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div class="lg:flex-grow text-gray-700 text-base font-medium lg:space-x-4">
+                        <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            Home
+                        </a>
+                        <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            About
+                        </a>
+                        <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            Sermons
+                        </a>
+                        <a href="events.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            Events
+                        </a>
+                        <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            Blog
+                        </a>
+                    </div>
+                    <div>
+                        <a href="contact.html" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">
+                            Contact
+                        </a>
+                    </div>
                 </div>
             </div>
-        </header>
-        <!-- navbar-->
-        <nav class=" sticky top-0 z-30 py-6 bg-cover h-full bg-gradient-to-r from-blue-300 to-blue-400">
-            <div>
-                <ul class="flex flex-wrap justify-center items-center text-base text-gray-700 font-medium">
-                    <li class="mx-4 bg-blue-500 hover:text-white hover:bg-blue-600 py-2 px-6 rounded-full"><a href="home.html">Home</a></li>
-                    <li class="mx-4 hover:text-white"><a href="about.html">About</a></li>
-                    <li class="mx-4 hover:text-white"><a href="sermons.html">Sermons</a></li>
-                    <li class="mx-4 hover:text-white"><a href="events.html">Events</a></li>
-                    <li class="mx-4 hover:text-white"><a href="blog.html">Blog</a></li>
-                    <li class="mx-4 hover:text-white"><a href="contact.html">Contacts</a></li>
-                </ul>
-            </div>
+
+            <!-- mobile menu -->
+			<div class="hidden md:hidden menu">
+				<ul class="">
+					<li class="active">
+                        <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            Home
+                        </a>
+                    </li>
+					<li>
+                        <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            About
+                        </a>
+                    </li>
+					<li>
+                        <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            Sermons
+                        </a>
+					<li>
+                        <a href="events.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">
+                            Contact
+                        </a>
+                    </li>
+				</ul>
+			</div>
         </nav>
-
-        <!-- our-beliefs-->
-        <section>
-            <header class="py-4">
-                <p class="font-bold tracking-wide text-3xl sm:text-4xl lg:text-5xl text-gray-500 text-center pt-4">
-                    Sermons
-                </p>
-            </header>
-            <!-- cards-->
-            <div class="md:px-0 px-8">
-                <div class="md:flex flex-wrap justify-evenly">
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:flex flex-wrap justify-evenly">
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:flex flex-wrap justify-evenly">
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                    <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                        <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                        <div class="py-4 pl-6 font-medium text-center">
-                            <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                            <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+    </header>
         
-    
-    
-        <!-- footer-->
-        <footer>
-            <div class="md:flex py-16 px-8 md:justify-evenly justify-center bg-gray-200">
-                <div class="flex-col justify-center py-4">
-                    <p class="pb-2 text-base font-medium text-gray-600">FOLLOW TBC</p>
-                    <div>
-                        <a class="mr-1" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                        <a class="mx-1" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a class="mx-1" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a class="ml-1" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+
+    <!-- our-beliefs-->
+    <section>
+        <header class="py-4">
+            <p class="font-bold tracking-wide text-3xl sm:text-4xl lg:text-5xl text-gray-500 text-center pt-4">
+                Sermons
+            </p>
+        </header>
+        <!-- cards-->
+        <div class="md:px-0 px-8">
+            <div class="md:flex flex-wrap justify-evenly">
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
                     </div>
                 </div>
-    
-                <!-- subscription-->
-                <div class="py-4">
-                    <p class="pb-4 text-base font-medium text-gray-600">SUBSCRIBE TO RECEIVE OUR NEWSLETTER</p>
-                    <div>
-                        <div class="">
-                            <label class="pr-4 md:pb-0 pb-4" for="Email">Email Address</label>
-                            <input class="py-1 px-3 appearance-none text-gray-700 border border-gray-200 rounded-md leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
-                        </div>
-                        <p class="py-4"><a class="bg-blue-400 text-center text-white rounded-md px-6 py-2" href="#">SUBMIT</a></p>
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
                     </div>
                 </div>
-            </div>
-    
-            <!-- contact-details-->
-            <div>
-                <div class="md:flex justify-evenly items-center md:px-0 px-4 text-center bg-gray-300 h-full py-16">
-                    <div class="md:py-0 py-4">
-                        <p>MAILING ADDRESS</p>
-                        <p>Trinity Baptist Church <br>
-                            P. O. Box 57907 – 00200 <br>
-                            Nairobi, Kenya</p>
-                    </div>
-                    <div class="md:py-0 py-4">
-                        <p>PHONE NUMBER</p>
-                        <p>0728406267 <br>
-                            0712345678
-                        </p>
-                    </div>
-                    <div class="md:py-0 py-4">
-                        <p>EMAIL ADDRESS</p>
-                        <p>info@tbcfunyula.com <br>
-                            tbcfunyula@gmail.com
-                        </p>
-                    </div>
-                    <div class="md:py-0 py-4">
-                        <p>LOCATION</p>
-                        <p>Segero Village <br>
-                            200m off Bumala - Port <br>
-                            Victoria Road
-                        </p>
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
                     </div>
                 </div>
             </div>
-    
-            <!-- copyright-->
-            <div class="bg-gray-500 py-8 text-center text-gray-300">
-                <p>Trinity Baptist Church - Funyula &copy; 2021</p>
+            <div class="md:flex flex-wrap justify-evenly">
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
             </div>
-        </footer>
-        
-    </body>
-    </html>
+            <div class="md:flex flex-wrap justify-evenly">
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
 
-    
+    <!-- footer-->
+    <footer>
+        <div class="md:flex py-16 px-8 md:justify-evenly justify-center bg-gray-200">
+            <div class="flex-col justify-center py-4">
+                <p class="pb-2 text-lg font-medium text-gray-600">FOLLOW US ON:</p>
+                <div>
+                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- subscription-->
+            <div class="py-4">
+                <p class="pb-4 text-base font-medium text-gray-600">SUBSCRIBE TO RECEIVE OUR NEWSLETTER</p>
+                <div>
+                    <div class="my-4">
+                        <label class="pr-4 md:pb-0 pb-4 font-medium text-gray-800" for="Email">Email Address</label>
+                        <input class="py-2 px-3 appearance-none text-gray-700 border border-gray-200 rounded-lg leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
+                    </div>
+                    <button onsubmit="validateMail()" class="py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact-details-->
+        <div>
+            <div class="md:flex justify-evenly items-center md:px-0 px-4 text-center bg-gray-300 h-full py-16">
+                <div class="md:py-0 py-4">
+                    <div class="text-gray-900 lg:text-3xl">
+                        <i class="my-2 fa fa-address-card-o" aria-hidden="true"></i>
+                    </div>
+                    <p>Trinity Baptist Church <br>
+                        P. O. Box 57907 - 00200 <br>
+                        Nairobi, Kenya
+                    </p>
+                </div>
+                <div class="md:py-0 py-4">
+                    <div class="text-gray-900 lg:text-3xl">
+                        <i class="my-2 fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <p>0728406267 <br>
+                        0712345678
+                    </p>
+                </div>
+                <div class="md:py-0 py-4">
+                    <div class="text-gray-900 lg:text-3xl">
+                        <i class="my-2 fa fa-envelope" aria-hidden="true"></i>
+                    </div> 
+                    <p>
+                        info@tbcfunyula.com <br>
+                        tbcfunyula@gmail.com
+                    </p>
+                </div>
+                <div class="md:py-0 py-4">
+                    <div class="text-gray-900 lg:text-3xl">
+                        <i class="my-2 fa fa-map-marker" aria-hidden="true"></i>
+                    </div> 
+                    <p>Segero Village <br>
+                        400m from Funyula <br>
+                        Mosque
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright-->
+        <div class="bg-gray-500 py-8 text-center text-gray-300">
+            <p>Trinity Baptist Church - Funyula &copy; 2021</p>
+        </div>
+    </footer>
+            
+
+
+    <script src="./app.js"></script>
 </body>
 </html>
