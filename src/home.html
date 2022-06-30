@@ -12,7 +12,7 @@
 
     <header>
         <!--navbar-->
-        <nav class="p-6 sticky top-0 bg-cover bg-gradient-to-r from-blue-300 to-blue-400">
+        <nav class="p-6 fixed top-0 right-0 left-0 bg-cover bg-gradient-to-r from-blue-300 to-blue-400">
             <div class="flex items-center justify-between flex-wrap">
                 <div class="flex items-center flex-shrink-0 text-white mr-6">
                     <a href="#">
@@ -54,7 +54,7 @@
             </div>
 
             <!-- mobile menu -->
-			<div class="hidden md:hidden menu">
+			<div class="hidden menu">
 				<ul class="">
 					<li class="active">
                         <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
@@ -99,16 +99,16 @@
             <p class="md:text-2xl text-white py-2 text-xl font-medium">Evening Service: 3.30pm</p>
         </div>
         <div class="flex justify-center items-center my-8">
-            <a class="bg-blue-500 hover:bg-blue-600 rounded-full py-2 px-8 text-base font-medium text-white text-center" href="contact.html">Contact</a>
+            <a class="transition ease-in-out delay-100 hover:-translate-y-2 hover:scale-125 duration-500 bg-blue-500 hover:bg-blue-600 rounded-full py-2 px-8 text-base font-medium text-white text-center" href="contact.html">Contact</a>
         </div>
     </section>
 
     <!-- about-->
-    <section class="">
-        <div class=" bg-gray-300">
-            <p class="md:mx-0 mx-8 lg:text-5xl md:text-4xl text-2xl text-center text-gray-600 font-bold indent-8 leading-8">We exist to glorify God through the preaching and teaching of the Bible with the aim that sinners will be saved and that saints will grow to Christian maturity.</p>
+    <section>
+        <div class="mx-auto md:px-40 md:py-44 py-16 bg-gray-300">
+            <p class="md:mx-0 mx-8 md:text-4xl text-2xl text-center text-gray-600 font-bold indent-8">We exist to glorify God through the preaching and teaching of the Bible with the aim that sinners will be saved and that saints will grow to Christian maturity.</p>
             <div class="flex justify-center items-center my-8">
-                <a class="bg-blue-500 hover:bg-blue-600 rounded-full py-2 px-8 text-base font-medium text-white text-center" href="about.html">About Us</a>
+                <a class="transition ease-in-out delay-100 hover:-translate-y-2 hover:scale-125 duration-500 bg-blue-500 hover:bg-blue-600 rounded-full py-2 px-8 text-base font-medium text-white text-center" href="about.html">About Us</a>
             </div>
         </div>
     </section>
@@ -117,15 +117,21 @@
     <!-- hero-2-->
     <section>
         <div class="md:flex justify-center items-center md:px-8 px-8 md:py-48 py-16 md:space-x-16">
-            <img class="rounded-lg w-full h-full md:mb-0 mb-8 px-8" src="../../images/image_2.jpg" alt="">
+            <img class="rounded-lg w-3/5 h-3/5 md:mb-0 mb-8 px-8" src="../../images/image_2.jpg" alt="">
 
             <!-- <div class=""> -->
-                <p class="lg:text-5xl md:text-4xl text-3xl text-gray-700 md:text-left text-center font-bold leading-loose">
-                    <span class="text-gray-400 font-semibold">We believe and preach the</span> Sovereignty of God <span class="text-gray-400 font-semibold">in</span> Creation, Providence <span class="text-gray-400 font-semibold">, and</span> Salvation<span class="text-gray-400 font-semibold"></span>
-                </p>
+            <p class="lg:text-5xl md:text-4xl text-3xl text-gray-700 md:text-left text-center font-bold">
+                <span class="text-gray-400 font-semibold leading-relaxed">We believe and preach the</span> 
+                Sovereignty of God <span class="text-gray-400 font-semibold leading-relaxed">in</span> 
+                Creation, Providence <span class="text-gray-400 font-semibold">, and</span> 
+                Salvation<span class="text-gray-400 font-semibold leading-relaxed"></span>
+            </p>
             <!-- </div> -->
         </div>
     </section>
+    
+
+
 
     <!-- worship-order-->
     <section class="bg-gray-300 w-full">
@@ -202,32 +208,51 @@
             <p class="md:text-5xl text-2xl text-gray-500 font-medium">Sermons</p>
             <a class="text-blue-500 md:text-xl text-base font-medium hover:underline" href="sermons.html">VIEW ALL</a>
         </div>
+
         <div class="px-8">
             <hr>
         </div>
+
         <!-- cards-->
         <div class="md:flex flex-wrap justify-evenly">
-            <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                <div class="py-6 pl-6 font-medium">
-                    <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                    <p class="text-gray-500 text-sm py-2">MATTHEW 10:10</p>
+            <a class="" href="#">
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-6 pl-6 hover:text-gray-400">
+                        <p class="text-gray-800 pb-1 font-medium text-lg hover:text-blue-500 duration-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod odit corrupti soluta quidem aliquid eligendi!</p>
+                        <p class="text-blue-500 font-semibold text-base pt-3">
+                            <a href="#">Read More</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                <div class="py-6 pl-6 font-medium">
-                    <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                    <p class="text-gray-500 text-sm py-2">MATTHEW 10:10</p>
+            </a>
+
+            <a class="" href="#">
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-6 pl-6 hover:text-gray-400">
+                        <p class="text-gray-800 pb-1 font-medium text-lg hover:text-blue-500 duration-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod odit corrupti soluta quidem aliquid eligendi!</p>
+                        <p class="text-blue-500 font-semibold text-base pt-3">
+                            <a href="#">Read More</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                <div class="py-6 pl-6 font-medium">
-                    <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                    <p class="text-gray-500 text-sm py-2">MATTHEW 10:10</p>
+            </a>
+
+            <a class="" href="#">
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <div class="py-6 pl-6 hover:text-gray-400">
+                        <p class="text-gray-800 pb-1 font-medium text-lg hover:text-blue-500 duration-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod odit corrupti soluta quidem aliquid eligendi!</p>
+                        <p class="text-blue-500 font-semibold text-base pt-3">
+                            <a href="#">Read More</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -237,16 +262,16 @@
             <div class="flex-col justify-center py-4">
                 <p class="pb-2 text-lg font-medium text-gray-600">FOLLOW US ON:</p>
                 <div>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" pr-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-youtube-play" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -254,22 +279,22 @@
 
             <!-- subscription-->
             <div class="py-4">
-                <p class="pb-4 text-base font-medium text-gray-600">SUBSCRIBE TO RECEIVE OUR NEWSLETTER</p>
+                <p class="pb-4 text-base font-medium text-gray-700">SUBSCRIBE TO OUR NEWSLETTER</p>
                 <div>
                     <div class="my-4">
-                        <label class="pr-4 md:pb-0 pb-4 font-medium text-gray-800" for="Email">Email Address</label>
+                        <label class="pr-4 md:pb-0 pb-4 font-medium text-gray-700" for="Email">Email Address</label>
                         <input class="py-2 px-3 appearance-none text-gray-700 border border-gray-200 rounded-lg leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
                     </div>
-                    <button onsubmit="validateMail()" class="py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6">SUBMIT</button>
+                    <button onsubmit="validateMail()" class="py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6 transition ease-in-out delay-100 hover:-translate-y-2 hover:scale-105 duration-500">SUBMIT</button>
                 </div>
             </div>
         </div>
 
         <!-- contact-details-->
         <div>
-            <div class="md:flex justify-evenly items-center md:px-0 px-4 text-center bg-gray-300 h-full py-16">
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+            <div class="md:flex justify-evenly text-gray-700 text-center items-center md:px-0 px-4 bg-gray-300 h-full py-16">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-address-card-o" aria-hidden="true"></i>
                     </div>
                     <p>Trinity Baptist Church <br>
@@ -277,16 +302,16 @@
                         Nairobi, Kenya
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <p>0728406267 <br>
                         0712345678
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-envelope" aria-hidden="true"></i>
                     </div> 
                     <p>
@@ -294,8 +319,8 @@
                         tbcfunyula@gmail.com
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-map-marker" aria-hidden="true"></i>
                     </div> 
                     <p>Segero Village <br>
@@ -307,7 +332,7 @@
         </div>
 
         <!-- copyright-->
-        <div class="bg-gray-500 py-8 text-center text-gray-300">
+        <div class="bg-gray-500 text-sm md:py-6 py-4 text-center text-gray-300">
             <p>Trinity Baptist Church - Funyula &copy; 2021</p>
         </div>
     </footer>
