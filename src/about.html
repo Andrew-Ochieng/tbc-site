@@ -64,6 +64,7 @@
                         <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
                             About
                         </a>
+                        
                     </li>
                     <li>
                         <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
@@ -88,6 +89,45 @@
             </div>
         </nav>
     </header>
+
+    <!-- our-history-->
+    <section>
+        <header class="py-4">
+            <p class="font-bold tracking-wide text-3xl sm:text-4xl lg:text-5xl text-gray-500 text-center pt-4">
+                Our History
+            </p>
+        </header>
+        <hr>
+        <article class="md:px-0 px-8">
+            <div class="md:px-44 md:py-8">
+                <p class="text-lg text-gray-600 leading-loose text-justify">
+                    Trinity Baptist Church, Nairobi stands in the tradition of Churches that have been called Particular Baptist, or Strict & Particular Baptist, and are often referred to as Reformed Baptist. Our doctrinal roots go back to the 1689 Baptist Confession. This Confession of Faith is very, very similar to the Westminster Confession of the Presbyterian Church (1646). This was a document of the Puritans and was greatly influenced by Calvin and the Reformation. This is why we are happy to be called ‘Reformed’ Baptists. We rejoice in what God did in reforming the church in the 16th century through men like John Calvin. We do not believe that “the church of today has come of age and is discovering new doctrines”. The new doctrines are usually the old heresies dressed up. God has always had His people in the world and we believe that doctrinal maturity was achieved in the Reformation and Puritan periods of the history of the church, the 16th and 17th centuries. In many ways we are pygmies as compared to them.
+                    Those who call themselves Reformed are often nicknamed ‘Calvinists’. We are not ashamed to be linked together with such a man of God as John Calvin, although we do not agree with absolutely everything he taught. We are in agreement with what has come to be known as The Five Points of Calvinism. Calvin himself did not pen these, but they were enumerated as a result of the Synod of Dort in the early 17th century to counter the five points of the Remonstrants (Arminians).
+                    We believe the Bible definitely teaches ‘TULIP’:
+                    <ul class="text-lg text-gray-600 pl-8 pt-4 leading-loose list-disc">
+                        <li>T - Total Deparavity</li>
+                        <li>U - Unconditional Election</li>
+                        <li>L - limited Atonement</li>
+                        <li>I - Irresistible Grace</li>
+                        <li>P - Perseverance of the Saints</li>
+                    </ul>
+                    <p class="text-lg text-gray-600 leading-loose">We also believe in what are termed the Five Solas (‘sola’ is a Latin word meaning ‘only’)</p>
+                    <ul class="text-lg text-gray-600 pl-8 pt-4 leading-loose list-decimal">
+                        <li><span class="italic">Sola Scriptura</span> - The Scriptures alone, our final authority</li>
+                        <li><span class="italic">Sola Gratia</span> - Grace alone, only source of salvation</li>
+                        <li><span class="italic">Sola Fide</span> - Faith alone, only way to receive salvation</li>
+                        <li><span class="italic">Sola Christus</span> - Christ alone, only Mediator of salvation</li>
+                        <li><span class="italic">Soli Deo Gloria</span> - To the glory of God alone, highest goal of salvation</li>
+                    </ul>
+                    <p class="text-lg text-gray-600 leading-loose">
+                        Trinity Baptist Church has its own Constitution, in which its doctrinal beliefs and
+                            its practices are laid out. To download the constitution and also a booklet entitled 
+                            Our Distinctive Doctrines, please find them on our <a href="#literature">literature page</a>.
+                    </p>
+                </p>
+            </div>
+        </article>
+    </section>
 
     <!-- our-beliefs-->
     <section>
@@ -240,16 +280,16 @@
             <div class="flex-col justify-center py-4">
                 <p class="pb-2 text-lg font-medium text-gray-600">FOLLOW US ON:</p>
                 <div>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" pr-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-youtube-play" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -257,22 +297,25 @@
 
             <!-- subscription-->
             <div class="py-4">
-                <p class="pb-4 text-base font-medium text-gray-600">SUBSCRIBE TO RECEIVE OUR NEWSLETTER</p>
-                <div>
+                <p class="pb-4 text-base font-medium text-gray-700">SUBSCRIBE TO OUR NEWSLETTER</p>
+                <form action="mail@mail.com" method="post">
                     <div class="my-4">
-                        <label class="pr-4 md:pb-0 pb-4 font-medium text-gray-800" for="Email">Email Address</label>
-                        <input class="py-2 px-3 appearance-none text-gray-700 border border-gray-200 rounded-lg leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
+                        <label class="pr-4 md:pb-0 md:text-lg font-medium text-gray-700" for="Email">Email Address</label>
+                        <input class="mail py-2 px-3 appearance-none text-gray-700 border border-gray-200 rounded-lg leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
                     </div>
-                    <button onsubmit="validateMail()" class="py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6">SUBMIT</button>
-                </div>
+                    <div class="my-4">
+                        <input class="mail-btn cursor-pointer py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6 transition ease-in delay-100 hover:-translate-y-1 hover:scale-105 duration-300" type="submit" value="Submit">   
+                    </div>
+                </form>
+                
             </div>
         </div>
 
         <!-- contact-details-->
         <div>
-            <div class="md:flex justify-evenly items-center md:px-0 px-4 text-center bg-gray-300 h-full py-16">
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+            <div class="md:flex justify-evenly text-gray-700 text-center items-center md:px-0 px-4 bg-gray-300 h-full py-16">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-address-card-o" aria-hidden="true"></i>
                     </div>
                     <p>Trinity Baptist Church <br>
@@ -280,16 +323,16 @@
                         Nairobi, Kenya
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <p>0728406267 <br>
                         0712345678
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-envelope" aria-hidden="true"></i>
                     </div> 
                     <p>
@@ -297,8 +340,8 @@
                         tbcfunyula@gmail.com
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-map-marker" aria-hidden="true"></i>
                     </div> 
                     <p>Segero Village <br>
@@ -310,7 +353,7 @@
         </div>
 
         <!-- copyright-->
-        <div class="bg-gray-500 py-8 text-center text-gray-300">
+        <div class="bg-gray-500 text-sm md:py-6 py-4 text-center text-gray-300">
             <p>Trinity Baptist Church - Funyula &copy; 2021</p>
         </div>
     </footer>

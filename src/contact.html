@@ -125,16 +125,16 @@
             <div class="flex-col justify-center py-4">
                 <p class="pb-2 text-lg font-medium text-gray-600">FOLLOW US ON:</p>
                 <div>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" pr-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a class="px-3 text-2xl hover:text-gray-600" href="#">
+                    <a class=" px-3 text-2xl text-gray-800 hover:text-gray-600" href="#">
                         <i class="fa fa-youtube-play" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -142,22 +142,25 @@
 
             <!-- subscription-->
             <div class="py-4">
-                <p class="pb-4 text-base font-medium text-gray-600">SUBSCRIBE TO RECEIVE OUR NEWSLETTER</p>
-                <div>
+                <p class="pb-4 text-base font-medium text-gray-700">SUBSCRIBE TO OUR NEWSLETTER</p>
+                <form action="mail@mail.com" method="post">
                     <div class="my-4">
-                        <label class="pr-4 md:pb-0 pb-4 font-medium text-gray-800" for="Email">Email Address</label>
-                        <input class="py-2 px-3 appearance-none text-gray-700 border border-gray-200 rounded-lg leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
+                        <label class="pr-4 md:pb-0 md:text-lg font-medium text-gray-700" for="Email">Email Address</label>
+                        <input class="mail py-2 px-3 appearance-none text-gray-700 border border-gray-200 rounded-lg leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
                     </div>
-                    <button onsubmit="validateMail()" class="py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6">SUBMIT</button>
-                </div>
+                    <div class="my-4">
+                        <input class="mail-btn cursor-pointer py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6 transition ease-in delay-100 hover:-translate-y-1 hover:scale-105 duration-300" type="submit" value="Submit">   
+                    </div>
+                </form>
+                
             </div>
         </div>
 
         <!-- contact-details-->
         <div>
-            <div class="md:flex justify-evenly items-center md:px-0 px-4 text-center bg-gray-300 h-full py-16">
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+            <div class="md:flex justify-evenly text-gray-700 text-center items-center md:px-0 px-4 bg-gray-300 h-full py-16">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-address-card-o" aria-hidden="true"></i>
                     </div>
                     <p>Trinity Baptist Church <br>
@@ -165,16 +168,16 @@
                         Nairobi, Kenya
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <p>0728406267 <br>
                         0712345678
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-envelope" aria-hidden="true"></i>
                     </div> 
                     <p>
@@ -182,8 +185,8 @@
                         tbcfunyula@gmail.com
                     </p>
                 </div>
-                <div class="md:py-0 py-4">
-                    <div class="text-gray-900 lg:text-3xl">
+                <div class="md:py-0 py-4 hover:translate-y-4 hover:text-blue-600 duration-500">
+                    <div class="lg:text-3xl hover:text-blue-600">
                         <i class="my-2 fa fa-map-marker" aria-hidden="true"></i>
                     </div> 
                     <p>Segero Village <br>
@@ -195,11 +198,10 @@
         </div>
 
         <!-- copyright-->
-        <div class="bg-gray-500 py-8 text-center text-gray-300">
+        <div class="bg-gray-500 text-sm md:py-6 py-4 text-center text-gray-300">
             <p>Trinity Baptist Church - Funyula &copy; 2021</p>
         </div>
     </footer>
-        
 
 
 

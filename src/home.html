@@ -28,23 +28,54 @@
                     </button>
                 </div>
                 <div class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="lg:flex-grow text-gray-700 text-base font-medium lg:space-x-4">
-                        <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Home
-                        </a>
-                        <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            About
-                        </a>
-                        <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Sermons
-                        </a>
-                        <a href="events.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Events
-                        </a>
-                        <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Blog
-                        </a>
-                    </div>
+                    <ul class="md:flex lg:flex-grow text-gray-700 text-base font-medium lg:space-x-4">
+                        <li>
+                            <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <button href="#!" id="dropdown-btn" class="flex mt-4 lg:inline-flex lg:mt-0 hover:text-white">
+                                About
+                            </button>
+
+                            <!-- dropdown-menu -->
+                            <div id="dropdown" class="mt-4 z-10 bg-gray-200 hidden divide-y divide-gray-100 rounded shadow-md">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" >
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our History</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Beliefs</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Statement of Faith</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pastors</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deacons</a>
+                                  </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Sermons
+                            </a>
+                        </li>
+                        <li>
+                            <a href="events.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
                     <div>
                         <a href="contact.html" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">
                             Contact
@@ -99,7 +130,7 @@
             <p class="md:text-2xl text-white py-2 text-xl font-medium">Evening Service: 3.30pm</p>
         </div>
         <div class="flex justify-center items-center my-8">
-            <a class="transition ease-in-out delay-100 hover:-translate-y-2 hover:scale-125 duration-500 bg-blue-500 hover:bg-blue-600 rounded-full py-2 px-8 text-base font-medium text-white text-center" href="contact.html">Contact</a>
+            <a id="hero-btn" class="transition ease-in-out delay-100 hover:-translate-y-2 hover:scale-125 duration-500 bg-blue-500 hover:bg-blue-600 rounded-full py-2 px-8 text-base font-medium text-white text-center" href="contact.html">Contact</a>
         </div>
     </section>
 
@@ -121,10 +152,10 @@
 
             <!-- <div class=""> -->
             <p class="lg:text-5xl md:text-4xl text-3xl text-gray-700 md:text-left text-center font-bold">
-                <span class="text-gray-400 font-semibold leading-relaxed">We believe and preach the</span> 
-                Sovereignty of God <span class="text-gray-400 font-semibold leading-relaxed">in</span> 
+                <span class="text-gray-400 font-semibold md:leading-relaxed">We believe and preach the</span> 
+                Sovereignty of God <span class="text-gray-400 font-semibold md:leading-relaxed">in</span> 
                 Creation, Providence <span class="text-gray-400 font-semibold">, and</span> 
-                Salvation<span class="text-gray-400 font-semibold leading-relaxed"></span>
+                Salvation<span class="text-gray-400 font-semibold md:leading-relaxed"></span>
             </p>
             <!-- </div> -->
         </div>
@@ -214,7 +245,7 @@
         </div>
 
         <!-- cards-->
-        <div class="md:flex flex-wrap justify-evenly">
+        <div class="md:flex flex-wrap justify-evenly ">
             <a class="" href="#">
                 <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
                     <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
@@ -280,13 +311,16 @@
             <!-- subscription-->
             <div class="py-4">
                 <p class="pb-4 text-base font-medium text-gray-700">SUBSCRIBE TO OUR NEWSLETTER</p>
-                <div>
+                <form id="mailForm" action="#" method="post">
                     <div class="my-4">
-                        <label class="pr-4 md:pb-0 pb-4 font-medium text-gray-700" for="Email">Email Address</label>
-                        <input class="py-2 px-3 appearance-none text-gray-700 border border-gray-200 rounded-lg leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
+                        <label class="pr-4 md:pb-0 md:text-lg font-medium text-gray-700" for="Email">Email Address</label>
+                        <input class="mail py-2 px-3 appearance-none text-gray-700 border border-gray-200 rounded-lg leading-tight focus:outline-none focus:bg-white" type="email" name="email" id="email">   
                     </div>
-                    <button onsubmit="validateMail()" class="py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6 transition ease-in-out delay-100 hover:-translate-y-2 hover:scale-105 duration-500">SUBMIT</button>
-                </div>
+                    <!-- <div class="my-4"> -->
+                        <input class="mail-btn cursor-pointer py-3 bg-blue-400 hover:bg-blue-500 text-center text-white rounded-lg px-6 transition ease-in delay-100 hover:-translate-y-1 hover:scale-105 duration-300" type="submit" value="Submit">   
+                    <!-- </div> -->
+                </form>
+                <Article class="col1 col-end"></Article>
             </div>
         </div>
 
