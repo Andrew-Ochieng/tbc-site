@@ -7,15 +7,14 @@
     <title>Trinity Baptist Church</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-    <body class="bg-gray-50">
-        
+<body class="bg-gray-50">
     <header>
         <!--navbar-->
-        <nav class="p-6 sticky top-0 bg-cover bg-gradient-to-r from-blue-300 to-blue-400">
+        <nav class="p-6 fixed top-0 right-0 left-0 bg-cover bg-gradient-to-r from-blue-300 to-blue-400">
             <div class="flex items-center justify-between flex-wrap">
                 <div class="flex items-center flex-shrink-0 text-white mr-6">
                     <a href="#">
-                        <img class="h-8" src="../images/tbc-nairobi-logo.svg" alt="">
+                        <img class="h-8" src="../dist/images/tbc-nairobi-logo.svg" alt="">
                     </a>
                 </div>
                 <div class="block lg:hidden">
@@ -27,23 +26,54 @@
                     </button>
                 </div>
                 <div class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="lg:flex-grow text-gray-700 text-base font-medium lg:space-x-4">
-                        <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Home
-                        </a>
-                        <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            About
-                        </a>
-                        <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Sermons
-                        </a>
-                        <a href="events.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Events
-                        </a>
-                        <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Blog
-                        </a>
-                    </div>
+                    <ul class="md:flex lg:flex-grow text-gray-700 text-base font-medium lg:space-x-4">
+                        <li>
+                            <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <button href="#!" id="dropdown-btn" class="flex mt-4 lg:inline-flex lg:mt-0 hover:text-white">
+                                About
+                            </button>
+
+                            <!-- dropdown-menu -->
+                            <!-- <div id="dropdown" class="mt-4 z-10 bg-gray-200 hidden divide-y divide-gray-100 rounded shadow-md">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" >
+                                    <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our History</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Beliefs</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Statement of Faith</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pastors</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deacons</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li>
+                            <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Sermons
+                            </a>
+                        </li>
+                        <li>
+                            <a href="events.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
                     <div>
                         <a href="contact.html" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">
                             Contact
@@ -88,10 +118,11 @@
             </div>
         </nav>
     </header>
+    
 
     <!-- blog-->
     <section>
-        <header class="py-4 md:mt-8">
+        <header class="py-4">
             <p class="font-bold tracking-wide text-3xl sm:text-4xl lg:text-5xl text-gray-500 text-center pt-4">
                 Our Blog
             </p>
@@ -100,79 +131,44 @@
         <!-- recent-news-->
         <section class="md:mb-36 mb-16">
             <p class="text-center text-3xl font-medium text-gray-600">Recent Church News</p>
+            
             <!-- grid-1-->
             <div class="container grid md:grid-cols-3 mx-auto my-8">
-            <!-- item-->
-            <div class="p-4">
-                <div>
-                    <img class="rounded-md py-2" src="../../images/sermons-1.jpg" alt="">
-                    <span class="text-xl text-gray-600 py-2">Church News</span>
-                    <div class="">
-                        <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
+                <!-- item-->
+                <div class="p-4">
+                    <div>
+                        <img class="rounded-md py-2" src="../dist/images/sermons-6.jpg" alt="">
+                        <span class="text-xl text-gray-600 py-2">Church News</span>
+                        <div class="">
+                            <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- end-item-->
-            <!-- item-->
-            <div class="p-4">
-                <div>
-                    <img class="rounded-md py-2" src="../../images/sermons-1.jpg" alt="">
-                    <span class="text-xl text-gray-600 py-2">Church News</span>
-                    <div class="">
-                        <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
+                <!-- end-item-->
+                <!-- item-->
+                <div class="p-4">
+                    <div>
+                        <img class="rounded-md py-2" src="../dist/images/sermons-6.jpg" alt="">
+                        <span class="text-xl text-gray-600 py-2">Church News</span>
+                        <div class="">
+                            <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- end-item-->
-            <!-- item-->
-            <div class="p-4">
-                <div>
-                    <img class="rounded-md py-2" src="../../images/sermons-1.jpg" alt="">
-                    <span class="text-xl text-gray-600 py-2">Church News</span>
-                    <div class="">
-                        <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
+                <!-- end-item-->
+                <!-- item-->
+                <div class="p-4">
+                    <div>
+                        <img class="rounded-md py-2" src="../dist/images/sermons-6.jpg" alt="">
+                        <span class="text-xl text-gray-600 py-2">Church News</span>
+                        <div class="">
+                            <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- end-item-->
+                <!-- end-item-->
             </div>
 
-            <!-- grid-1-->
-            <div class="container grid md:grid-cols-3 mx-auto my-8">
-            <!-- item-->
-            <div class="p-4">
-                <div>
-                    <img class="rounded-md py-2" src="../../images/sermons-1.jpg" alt="">
-                    <span class="text-xl text-gray-600 py-2">Church News</span>
-                    <div class="">
-                        <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
-                    </div>
-                </div>
-            </div>
-            <!-- end-item-->
-            <!-- item-->
-            <div class="p-4">
-                <div>
-                    <img class="rounded-md py-2" src="../../images/sermons-1.jpg" alt="">
-                    <span class="text-xl text-gray-600 py-2">Church News</span>
-                    <div class="">
-                        <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
-                    </div>
-                </div>
-            </div>
-            <!-- end-item-->
-            <!-- item-->
-            <div class="p-4">
-                <div>
-                    <img class="rounded-md py-2" src="../../images/sermons-1.jpg" alt="">
-                    <span class="text-xl text-gray-600 py-2">Church News</span>
-                    <div class="">
-                        <a href="#" class="text-lg font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga.</a>
-                    </div>
-                </div>
-            </div>
-            <!-- end-item-->
-            </div>
         </section>
 
 
@@ -184,7 +180,7 @@
             <!-- item-->
             <div class="p-4">
             <div>
-                <img class="rounded-md" src="../../images/sermons-2.jpg" alt="">
+                <img class="rounded-md" src="../dist/images/sermons-2.jpg" alt="">
                 <p class="py-2 text-gray-500 font-normal">17 December, 2021</p>
                 <p class="text-gray-800 font-serif font-medium text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="py-2 text-gray-500 font-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt placeat ea corporis?</p>
@@ -197,7 +193,7 @@
             <!-- item-->
             <div class="p-4">
             <div>
-                <img class="rounded-md" src="../../images/sermons-2.jpg" alt="">
+                <img class="rounded-md" src="../dist/images/sermons-2.jpg" alt="">
                 <p class="py-2 text-gray-500 font-normal">17 December, 2021</p>
                 <p class="text-gray-800 font-serif font-medium text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="py-2 text-gray-500 font-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt placeat ea corporis?</p>
@@ -210,7 +206,7 @@
             <!-- item-->
             <div class="p-4">
             <div>
-                <img class="rounded-md" src="../../images/sermons-2.jpg" alt="">
+                <img class="rounded-md" src="../dist/images/sermons-2.jpg" alt="">
                 <p class="py-2 text-gray-500 font-normal">17 December, 2021</p>
                 <p class="text-gray-800 font-serif font-medium text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="py-2 text-gray-500 font-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt placeat ea corporis?</p>
@@ -227,7 +223,7 @@
             <!-- item-->
             <div class="p-4">
             <div>
-                <img class="rounded-md" src="../../images/sermons-2.jpg" alt="">
+                <img class="rounded-md" src="../dist/images/sermons-2.jpg" alt="">
                 <p class="py-2 text-gray-500 font-normal">17 December, 2021</p>
                 <p class="text-gray-800 font-serif font-medium text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="py-2 text-gray-500 font-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt placeat ea corporis?</p>
@@ -240,7 +236,7 @@
             <!-- item-->
             <div class="p-4">
             <div>
-                <img class="rounded-md" src="../../images/sermons-2.jpg" alt="">
+                <img class="rounded-md" src="../dist/images/sermons-2.jpg" alt="">
                 <p class="py-2 text-gray-500 font-normal">17 December, 2021</p>
                 <p class="text-gray-800 font-serif font-medium text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="py-2 text-gray-500 font-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt placeat ea corporis?</p>
@@ -253,7 +249,7 @@
             <!-- item-->
             <div class="p-4">
             <div>
-                <img class="rounded-md" src="../../images/sermons-2.jpg" alt="">
+                <img class="rounded-md" src="../dist/images/sermons-2.jpg" alt="">
                 <p class="py-2 text-gray-500 font-normal">17 December, 2021</p>
                 <p class="text-gray-800 font-serif font-medium text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="py-2 text-gray-500 font-thin text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt placeat ea corporis?</p>
@@ -351,12 +347,12 @@
 
         <!-- copyright-->
         <div class="bg-gray-500 text-sm md:py-6 py-4 text-center text-gray-300">
-            <p>Trinity Baptist Church - Funyula &copy; 2021</p>
+            <p>Trinity Baptist Church - Funyula &copy; <span id="copyright"></span></p>
         </div>
     </footer>
         
 
 
-    <script src="./app.js"></script>
+    <script src="../app.js"></script>
 </body>
 </html>

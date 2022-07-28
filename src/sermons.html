@@ -9,14 +9,13 @@
 
 </head>
 <body class="bg-gray-50">
-        
     <header>
         <!--navbar-->
-        <nav class="p-6 sticky top-0 bg-cover bg-gradient-to-r from-blue-300 to-blue-400">
+        <nav class="p-6 fixed top-0 right-0 left-0 bg-cover bg-gradient-to-r from-blue-300 to-blue-400">
             <div class="flex items-center justify-between flex-wrap">
                 <div class="flex items-center flex-shrink-0 text-white mr-6">
                     <a href="#">
-                        <img class="h-8" src="../images/tbc-nairobi-logo.svg" alt="">
+                        <img class="h-8" src="../dist/images/tbc-nairobi-logo.svg" alt="">
                     </a>
                 </div>
                 <div class="block lg:hidden">
@@ -28,23 +27,54 @@
                     </button>
                 </div>
                 <div class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="lg:flex-grow text-gray-700 text-base font-medium lg:space-x-4">
-                        <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Home
-                        </a>
-                        <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            About
-                        </a>
-                        <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Sermons
-                        </a>
-                        <a href="events.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Events
-                        </a>
-                        <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-                            Blog
-                        </a>
-                    </div>
+                    <ul class="md:flex lg:flex-grow text-gray-700 text-base font-medium lg:space-x-4">
+                        <li>
+                            <a href="home.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <button href="#!" id="dropdown-btn" class="flex mt-4 lg:inline-flex lg:mt-0 hover:text-white">
+                                About
+                            </button>
+
+                            <!-- dropdown-menu -->
+                            <!-- <div id="dropdown" class="mt-4 z-10 bg-gray-200 hidden divide-y divide-gray-100 rounded shadow-md">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" >
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our History</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Beliefs</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Statement of Faith</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pastors</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deacons</a>
+                                  </li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li>
+                            <a href="sermons.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Sermons
+                            </a>
+                        </li>
+                        <li>
+                            <a href="events.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
                     <div>
                         <a href="contact.html" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">
                             Contact
@@ -102,44 +132,21 @@
         <div class="md:px-0 px-8">
             <div class="md:flex flex-wrap justify-evenly">
                 <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
                     <div class="py-4 pl-6 font-medium text-center">
                         <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
                         <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
                     </div>
                 </div>
                 <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
                     <div class="py-4 pl-6 font-medium text-center">
                         <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
                         <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
                     </div>
                 </div>
                 <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                    <div class="py-4 pl-6 font-medium text-center">
-                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                    </div>
-                </div>
-            </div>
-            <div class="md:flex flex-wrap justify-evenly">
-                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                    <div class="py-4 pl-6 font-medium text-center">
-                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                    </div>
-                </div>
-                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
-                    <div class="py-4 pl-6 font-medium text-center">
-                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
-                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
-                    </div>
-                </div>
-                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
                     <div class="py-4 pl-6 font-medium text-center">
                         <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
                         <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
@@ -148,21 +155,44 @@
             </div>
             <div class="md:flex flex-wrap justify-evenly">
                 <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
                     <div class="py-4 pl-6 font-medium text-center">
                         <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
                         <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
                     </div>
                 </div>
                 <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
                     <div class="py-4 pl-6 font-medium text-center">
                         <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
                         <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
                     </div>
                 </div>
                 <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
-                    <img class="rounded-t-xl" src="../../images/sermons-1.jpg" alt="">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex flex-wrap justify-evenly">
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
+                    <div class="py-4 pl-6 font-medium text-center">
+                        <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
+                        <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
+                    </div>
+                </div>
+                <div class="flex-col justify-center items-center md:w-1/4 w-full rounded-xl bg-white md:my-16 my-8 shadow-xl">
+                    <img class="rounded-t-xl" src="../dist/images/sermons-1.jpg" alt="">
                     <div class="py-4 pl-6 font-medium text-center">
                         <p class="text-gray-900 text-lg hover:text-blue-500">Lorem ipsum dolor sit.</p>
                         <p class="text-gray-500 text-sm py-1">MATTHEW 10:10</p>
@@ -255,7 +285,7 @@
 
         <!-- copyright-->
         <div class="bg-gray-500 text-sm md:py-6 py-4 text-center text-gray-300">
-            <p>Trinity Baptist Church - Funyula &copy; 2021</p>
+            <p>Trinity Baptist Church - Funyula &copy; <span id="copyright"></span></p>
         </div>
     </footer>
             
